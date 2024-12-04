@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        crossorigin="anonymous"
+    />
+    <title>API - Rick and Morty</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .sidebar {
+            height: 100vh;
+            width: 250px;
+            background-color: #343a40;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .header h1, .header h2 {
+            margin: 0;
+            padding: 0;
+        }
+        .pagination {
+            justify-content: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú lateral -->
+    <div class="sidebar">
+        <a href="index.html">Inicio</a>
+        <a href="rickAndMorty.html">Rick and Morty API</a>
+        <a href="pokemon.html">Pokémon API</a>
+        <a href="animeSearch.html">Buscador de Anime</a>
+    </div>
+
+    <!-- Contenido -->
+    <div class="content">
+        <div class="header text-center">
+            <h1>Rick and Morty API</h1><br>
+            
+        </div>
+        <div class="container">
+            <div id="dataAlbum" class="dataAlbum row row-cols-1 row-cols-md-5 g-4"></div>
+            <ul id="pagination" class="pagination"></ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/rickAndMortyApi.js"></script>
+</body>
+</html>
